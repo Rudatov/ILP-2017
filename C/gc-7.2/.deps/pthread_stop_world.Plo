@@ -1,0 +1,290 @@
+pthread_stop_world.lo: pthread_stop_world.c /usr/include/stdc-predef.h \
+ include/private/pthread_support.h include/private/gc_priv.h \
+ include/private/config.h include/private/../gc.h \
+ include/private/../gc_version.h include/private/../gc_config_macros.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include/stddef.h \
+ /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/bits/long-double.h \
+ /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
+ include/private/../gc_pthread_redirects.h /usr/include/pthread.h \
+ /usr/include/endian.h /usr/include/bits/endian.h \
+ /usr/include/bits/byteswap.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/bits/byteswap-16.h \
+ /usr/include/bits/uintn-identity.h /usr/include/sched.h \
+ /usr/include/bits/types/time_t.h \
+ /usr/include/bits/types/struct_timespec.h /usr/include/bits/sched.h \
+ /usr/include/time.h /usr/include/bits/time.h /usr/include/bits/timex.h \
+ /usr/include/bits/types/struct_timeval.h \
+ /usr/include/bits/types/clock_t.h /usr/include/bits/types/struct_tm.h \
+ /usr/include/bits/types/clockid_t.h /usr/include/bits/types/timer_t.h \
+ /usr/include/bits/types/struct_itimerspec.h /usr/include/xlocale.h \
+ /usr/include/bits/pthreadtypes.h /usr/include/bits/setjmp.h \
+ /usr/include/dlfcn.h /usr/include/bits/dlfcn.h /usr/include/signal.h \
+ /usr/include/bits/sigset.h /usr/include/bits/signum.h \
+ /usr/include/bits/siginfo.h /usr/include/bits/sigaction.h \
+ /usr/include/bits/sigcontext.h /usr/include/bits/sigstack.h \
+ /usr/include/sys/ucontext.h /usr/include/bits/sigthread.h \
+ /usr/include/stdlib.h /usr/include/bits/libc-header-start.h \
+ /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
+ /usr/include/sys/types.h /usr/include/sys/select.h \
+ /usr/include/bits/select.h /usr/include/sys/sysmacros.h \
+ /usr/include/bits/sysmacros.h /usr/include/alloca.h \
+ /usr/include/bits/stdlib-bsearch.h /usr/include/bits/stdlib-float.h \
+ include/private/../gc_tiny_fl.h include/private/../gc_mark.h \
+ include/private/gcconfig.h /usr/include/unistd.h \
+ /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
+ /usr/include/bits/confname.h /usr/include/getopt.h \
+ include/private/gc_hdrs.h include/private/gc_locks.h \
+ /usr/include/atomic_ops.h /usr/include/atomic_ops/ao_version.h \
+ /usr/include/assert.h /usr/include/atomic_ops/sysdeps/gcc/x86.h \
+ /usr/include/atomic_ops/sysdeps/all_aligned_atomic_load_store.h \
+ /usr/include/atomic_ops/sysdeps/all_atomic_load_store.h \
+ /usr/include/atomic_ops/sysdeps/all_atomic_only_load.h \
+ /usr/include/atomic_ops/sysdeps/loadstore/atomic_load.h \
+ /usr/include/atomic_ops/sysdeps/loadstore/char_atomic_load.h \
+ /usr/include/atomic_ops/sysdeps/loadstore/short_atomic_load.h \
+ /usr/include/atomic_ops/sysdeps/loadstore/int_atomic_load.h \
+ /usr/include/atomic_ops/sysdeps/loadstore/atomic_store.h \
+ /usr/include/atomic_ops/sysdeps/loadstore/char_atomic_store.h \
+ /usr/include/atomic_ops/sysdeps/loadstore/short_atomic_store.h \
+ /usr/include/atomic_ops/sysdeps/loadstore/int_atomic_store.h \
+ /usr/include/atomic_ops/sysdeps/test_and_set_t_is_char.h \
+ /usr/include/atomic_ops/sysdeps/ordered_except_wr.h \
+ /usr/include/atomic_ops/sysdeps/read_ordered.h \
+ /usr/include/atomic_ops/sysdeps/loadstore/ordered_loads_only.h \
+ /usr/include/atomic_ops/sysdeps/loadstore/ordered_stores_only.h \
+ /usr/include/atomic_ops/generalize.h \
+ /usr/include/atomic_ops/generalize-small.h \
+ /usr/include/atomic_ops/generalize-arithm.h /usr/include/string.h \
+ /usr/include/bits/string.h /usr/include/bits/string2.h \
+ /usr/include/setjmp.h include/private/pthread_stop_world.h \
+ include/private/thread_local_alloc.h include/gc_inline.h include/gc.h \
+ include/gc_tiny_fl.h /usr/include/semaphore.h \
+ /usr/include/bits/semaphore.h /usr/include/errno.h \
+ /usr/include/bits/errno.h /usr/include/linux/errno.h \
+ /usr/include/asm/errno.h /usr/include/asm-generic/errno.h \
+ /usr/include/asm-generic/errno-base.h
+
+/usr/include/stdc-predef.h:
+
+include/private/pthread_support.h:
+
+include/private/gc_priv.h:
+
+include/private/config.h:
+
+include/private/../gc.h:
+
+include/private/../gc_version.h:
+
+include/private/../gc_config_macros.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include/stddef.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/bits/long-double.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+include/private/../gc_pthread_redirects.h:
+
+/usr/include/pthread.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/bits/byteswap-16.h:
+
+/usr/include/bits/uintn-identity.h:
+
+/usr/include/sched.h:
+
+/usr/include/bits/types/time_t.h:
+
+/usr/include/bits/types/struct_timespec.h:
+
+/usr/include/bits/sched.h:
+
+/usr/include/time.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/bits/timex.h:
+
+/usr/include/bits/types/struct_timeval.h:
+
+/usr/include/bits/types/clock_t.h:
+
+/usr/include/bits/types/struct_tm.h:
+
+/usr/include/bits/types/clockid_t.h:
+
+/usr/include/bits/types/timer_t.h:
+
+/usr/include/bits/types/struct_itimerspec.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/bits/setjmp.h:
+
+/usr/include/dlfcn.h:
+
+/usr/include/bits/dlfcn.h:
+
+/usr/include/signal.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/bits/signum.h:
+
+/usr/include/bits/siginfo.h:
+
+/usr/include/bits/sigaction.h:
+
+/usr/include/bits/sigcontext.h:
+
+/usr/include/bits/sigstack.h:
+
+/usr/include/sys/ucontext.h:
+
+/usr/include/bits/sigthread.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/bits/libc-header-start.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/bits/sysmacros.h:
+
+/usr/include/alloca.h:
+
+/usr/include/bits/stdlib-bsearch.h:
+
+/usr/include/bits/stdlib-float.h:
+
+include/private/../gc_tiny_fl.h:
+
+include/private/../gc_mark.h:
+
+include/private/gcconfig.h:
+
+/usr/include/unistd.h:
+
+/usr/include/bits/posix_opt.h:
+
+/usr/include/bits/environments.h:
+
+/usr/include/bits/confname.h:
+
+/usr/include/getopt.h:
+
+include/private/gc_hdrs.h:
+
+include/private/gc_locks.h:
+
+/usr/include/atomic_ops.h:
+
+/usr/include/atomic_ops/ao_version.h:
+
+/usr/include/assert.h:
+
+/usr/include/atomic_ops/sysdeps/gcc/x86.h:
+
+/usr/include/atomic_ops/sysdeps/all_aligned_atomic_load_store.h:
+
+/usr/include/atomic_ops/sysdeps/all_atomic_load_store.h:
+
+/usr/include/atomic_ops/sysdeps/all_atomic_only_load.h:
+
+/usr/include/atomic_ops/sysdeps/loadstore/atomic_load.h:
+
+/usr/include/atomic_ops/sysdeps/loadstore/char_atomic_load.h:
+
+/usr/include/atomic_ops/sysdeps/loadstore/short_atomic_load.h:
+
+/usr/include/atomic_ops/sysdeps/loadstore/int_atomic_load.h:
+
+/usr/include/atomic_ops/sysdeps/loadstore/atomic_store.h:
+
+/usr/include/atomic_ops/sysdeps/loadstore/char_atomic_store.h:
+
+/usr/include/atomic_ops/sysdeps/loadstore/short_atomic_store.h:
+
+/usr/include/atomic_ops/sysdeps/loadstore/int_atomic_store.h:
+
+/usr/include/atomic_ops/sysdeps/test_and_set_t_is_char.h:
+
+/usr/include/atomic_ops/sysdeps/ordered_except_wr.h:
+
+/usr/include/atomic_ops/sysdeps/read_ordered.h:
+
+/usr/include/atomic_ops/sysdeps/loadstore/ordered_loads_only.h:
+
+/usr/include/atomic_ops/sysdeps/loadstore/ordered_stores_only.h:
+
+/usr/include/atomic_ops/generalize.h:
+
+/usr/include/atomic_ops/generalize-small.h:
+
+/usr/include/atomic_ops/generalize-arithm.h:
+
+/usr/include/string.h:
+
+/usr/include/bits/string.h:
+
+/usr/include/bits/string2.h:
+
+/usr/include/setjmp.h:
+
+include/private/pthread_stop_world.h:
+
+include/private/thread_local_alloc.h:
+
+include/gc_inline.h:
+
+include/gc.h:
+
+include/gc_tiny_fl.h:
+
+/usr/include/semaphore.h:
+
+/usr/include/bits/semaphore.h:
+
+/usr/include/errno.h:
+
+/usr/include/bits/errno.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/asm/errno.h:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/asm-generic/errno-base.h:
