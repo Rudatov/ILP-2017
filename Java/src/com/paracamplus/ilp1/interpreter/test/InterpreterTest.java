@@ -50,7 +50,7 @@ public class InterpreterTest {
     public void configureRunner(InterpreterRunner run) throws EvaluationException {
     	// configuration du parseur
         IASTfactory factory = new ASTfactory();
-        IXMLParser xmlParser = new XMLParser(factory);
+        IXMLParser xmlParser = new XMLParser(factory); 
         xmlParser.setGrammar(new File(XMLgrammarFile));
         run.setXMLParser(xmlParser);
         run.setILPMLParser(new ILPMLParser(factory));

@@ -17,7 +17,7 @@ old_library='libcord.a'
 inherited_linker_flags=''
 
 # Libraries that this one depends upon.
-dependency_libs=' /usr/local/lib/libgc.la -lpthread -ldl -latomic_ops'
+dependency_libs=' /usr/local/lib/libgc.la -lpthread -ldl'
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''

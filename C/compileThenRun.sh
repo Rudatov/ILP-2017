@@ -57,6 +57,7 @@ CFLAGS='-Wall -Wno-unused-variable -Wno-unused-but-set-variable -Wno-unused-labe
 # NOTE: Il y a des tests avec des variables inutilisees, ne pas
 # attirer l'attention dessus.
 
+#COMMAND_DIR = "C:/Eclipse/workspace-eclipse/ILP-UPMC/C"
 COMMAND_DIR=`dirname $0`
 case "$COMMAND_DIR" in
     # rendre le repertoire qui contient compileThenRun.sh absolu:

@@ -1,5 +1,5 @@
 # 1 "list_atomic.c"
-# 1 "/home/ptalbot/repositories/research/lectures/dlp/ILP-UPMC/C/gc-7.2/libatomic_ops/tests//"
+# 1 "/users/nfs/Etu0/3100420/workspace/ILP-UPMC/C/gc-7.2/libatomic_ops/tests//"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
@@ -10,37 +10,27 @@
 # 1 "/usr/include/assert.h" 1 3 4
 # 35 "/usr/include/assert.h" 3 4
 # 1 "/usr/include/features.h" 1 3 4
-# 410 "/usr/include/features.h" 3 4
-# 1 "/usr/include/sys/cdefs.h" 1 3 4
-# 441 "/usr/include/sys/cdefs.h" 3 4
-# 1 "/usr/include/bits/wordsize.h" 1 3 4
-# 442 "/usr/include/sys/cdefs.h" 2 3 4
-# 1 "/usr/include/bits/long-double.h" 1 3 4
-# 443 "/usr/include/sys/cdefs.h" 2 3 4
-# 411 "/usr/include/features.h" 2 3 4
-# 434 "/usr/include/features.h" 3 4
-# 1 "/usr/include/gnu/stubs.h" 1 3 4
-# 10 "/usr/include/gnu/stubs.h" 3 4
-# 1 "/usr/include/gnu/stubs-64.h" 1 3 4
-# 11 "/usr/include/gnu/stubs.h" 2 3 4
-# 435 "/usr/include/features.h" 2 3 4
+# 374 "/usr/include/features.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 1 3 4
+# 385 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 386 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
+# 375 "/usr/include/features.h" 2 3 4
+# 398 "/usr/include/features.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 1 3 4
+# 10 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/gnu/stubs-64.h" 1 3 4
+# 11 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 2 3 4
+# 399 "/usr/include/features.h" 2 3 4
 # 36 "/usr/include/assert.h" 2 3 4
 # 28 "../src/atomic_ops.h" 2
-# 1 "/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include/stddef.h" 1 3 4
-# 149 "/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include/stddef.h" 3 4
-
-# 149 "/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include/stddef.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.9/include/stddef.h" 1 3 4
+# 147 "/usr/lib/gcc/x86_64-linux-gnu/4.9/include/stddef.h" 3 4
 typedef long int ptrdiff_t;
-# 216 "/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include/stddef.h" 3 4
+# 212 "/usr/lib/gcc/x86_64-linux-gnu/4.9/include/stddef.h" 3 4
 typedef long unsigned int size_t;
-# 328 "/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include/stddef.h" 3 4
+# 324 "/usr/lib/gcc/x86_64-linux-gnu/4.9/include/stddef.h" 3 4
 typedef int wchar_t;
-# 426 "/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include/stddef.h" 3 4
-typedef struct {
-  long long __max_align_ll __attribute__((__aligned__(__alignof__(long long))));
-  long double __max_align_ld __attribute__((__aligned__(__alignof__(long double))));
-# 437 "/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include/stddef.h" 3 4
-} max_align_t;
 # 29 "../src/atomic_ops.h" 2
 # 225 "../src/atomic_ops.h"
 # 1 "../src/atomic_ops/sysdeps/gcc/x86_64.h" 1
@@ -49,16 +39,10 @@ typedef struct {
 # 28 "../src/atomic_ops/sysdeps/gcc/../all_aligned_atomic_load_store.h"
 # 1 "../src/atomic_ops/sysdeps/gcc/../aligned_atomic_load_store.h" 1
 # 26 "../src/atomic_ops/sysdeps/gcc/../aligned_atomic_load_store.h"
-
-# 26 "../src/atomic_ops/sysdeps/gcc/../aligned_atomic_load_store.h"
 static __inline size_t
 AO_load(const volatile size_t *addr)
 {
-  
-# 29 "../src/atomic_ops/sysdeps/gcc/../aligned_atomic_load_store.h" 3 4
- ((void) (0))
-# 29 "../src/atomic_ops/sysdeps/gcc/../aligned_atomic_load_store.h"
-                                                 ;
+  ((void) (0));
 
 
   return *(size_t *)addr;
@@ -68,11 +52,7 @@ AO_load(const volatile size_t *addr)
 static __inline void
 AO_store(volatile size_t *addr, size_t new_val)
 {
-  
-# 39 "../src/atomic_ops/sysdeps/gcc/../aligned_atomic_load_store.h" 3 4
- ((void) (0))
-# 39 "../src/atomic_ops/sysdeps/gcc/../aligned_atomic_load_store.h"
-                                                 ;
+  ((void) (0));
   (*(size_t *)addr) = new_val;
 }
 # 29 "../src/atomic_ops/sysdeps/gcc/../all_aligned_atomic_load_store.h" 2
@@ -98,11 +78,7 @@ AO_char_store(volatile unsigned char *addr, unsigned char new_val)
 static __inline unsigned short
 AO_short_load(const volatile unsigned short *addr)
 {
-  
-# 31 "../src/atomic_ops/sysdeps/gcc/../short_aligned_atomic_load_store.h" 3 4
- ((void) (0))
-# 31 "../src/atomic_ops/sysdeps/gcc/../short_aligned_atomic_load_store.h"
-                                                           ;
+  ((void) (0));
 
 
   return (*(unsigned short *)addr);
@@ -112,11 +88,7 @@ AO_short_load(const volatile unsigned short *addr)
 static __inline void
 AO_short_store(volatile unsigned short *addr, unsigned short new_val)
 {
-  
-# 41 "../src/atomic_ops/sysdeps/gcc/../short_aligned_atomic_load_store.h" 3 4
- ((void) (0))
-# 41 "../src/atomic_ops/sysdeps/gcc/../short_aligned_atomic_load_store.h"
-                                                           ;
+  ((void) (0));
   (*(unsigned short *)addr) = new_val;
 }
 # 31 "../src/atomic_ops/sysdeps/gcc/../all_aligned_atomic_load_store.h" 2
@@ -125,11 +97,7 @@ AO_short_store(volatile unsigned short *addr, unsigned short new_val)
 static __inline unsigned int
 AO_int_load(const volatile unsigned int *addr)
 {
-  
-# 29 "../src/atomic_ops/sysdeps/gcc/../int_aligned_atomic_load_store.h" 3 4
- ((void) (0))
-# 29 "../src/atomic_ops/sysdeps/gcc/../int_aligned_atomic_load_store.h"
-                                                         ;
+  ((void) (0));
 
 
   return (*(unsigned int *)addr);
@@ -139,11 +107,7 @@ AO_int_load(const volatile unsigned int *addr)
 static __inline void
 AO_int_store(volatile unsigned int *addr, unsigned int new_val)
 {
-  
-# 39 "../src/atomic_ops/sysdeps/gcc/../int_aligned_atomic_load_store.h" 3 4
- ((void) (0))
-# 39 "../src/atomic_ops/sysdeps/gcc/../int_aligned_atomic_load_store.h"
-                                                         ;
+  ((void) (0));
   (*(unsigned int *)addr) = new_val;
 }
 # 31 "../src/atomic_ops/sysdeps/gcc/../all_aligned_atomic_load_store.h" 2
@@ -276,16 +240,11 @@ typedef enum {AO_BYTE_TS_clear = 0, AO_BYTE_TS_set = 0xff} AO_BYTE_TS_val;
 
 # 1 "../src/atomic_ops/sysdeps/gcc/../standard_ao_double_t.h" 1
 # 11 "../src/atomic_ops/sysdeps/gcc/../standard_ao_double_t.h"
-# 1 "/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include/xmmintrin.h" 1 3 4
-# 31 "/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include/xmmintrin.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include/mmintrin.h" 1 3 4
-# 42 "/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include/mmintrin.h" 3 4
-
-# 42 "/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include/mmintrin.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.9/include/xmmintrin.h" 1 3 4
+# 31 "/usr/lib/gcc/x86_64-linux-gnu/4.9/include/xmmintrin.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.9/include/mmintrin.h" 1 3 4
+# 38 "/usr/lib/gcc/x86_64-linux-gnu/4.9/include/mmintrin.h" 3 4
 typedef int __m64 __attribute__ ((__vector_size__ (8), __may_alias__));
-
-
-typedef int __m64_u __attribute__ ((__vector_size__ (8), __may_alias__, __aligned__ (1)));
 
 
 typedef int __v2si __attribute__ ((__vector_size__ (8)));
@@ -554,7 +513,7 @@ _m_paddd (__m64 __m1, __m64 __m2)
 {
   return _mm_add_pi32 (__m1, __m2);
 }
-# 322 "/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include/mmintrin.h" 3 4
+# 315 "/usr/lib/gcc/x86_64-linux-gnu/4.9/include/mmintrin.h" 3 4
 extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_add_si64 (__m64 __m1, __m64 __m2)
 {
@@ -659,7 +618,7 @@ _m_psubd (__m64 __m1, __m64 __m2)
 {
   return _mm_sub_pi32 (__m1, __m2);
 }
-# 434 "/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include/mmintrin.h" 3 4
+# 427 "/usr/lib/gcc/x86_64-linux-gnu/4.9/include/mmintrin.h" 3 4
 extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_sub_si64 (__m64 __m1, __m64 __m2)
 {
@@ -1170,24 +1129,15 @@ _mm_set1_pi8 (char __b)
 {
   return _mm_set_pi8 (__b, __b, __b, __b, __b, __b, __b, __b);
 }
-# 32 "/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include/xmmintrin.h" 2 3 4
+# 32 "/usr/lib/gcc/x86_64-linux-gnu/4.9/include/xmmintrin.h" 2 3 4
 
 
-# 1 "/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include/mm_malloc.h" 1 3 4
-# 27 "/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include/mm_malloc.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.9/include/mm_malloc.h" 1 3 4
+# 27 "/usr/lib/gcc/x86_64-linux-gnu/4.9/include/mm_malloc.h" 3 4
 # 1 "/usr/include/stdlib.h" 1 3 4
-# 25 "/usr/include/stdlib.h" 3 4
-# 1 "/usr/include/bits/libc-header-start.h" 1 3 4
-# 26 "/usr/include/stdlib.h" 2 3 4
-
-
-
-
-
-
-
-# 1 "/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include/stddef.h" 1 3 4
-# 34 "/usr/include/stdlib.h" 2 3 4
+# 32 "/usr/include/stdlib.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.9/include/stddef.h" 1 3 4
+# 33 "/usr/include/stdlib.h" 2 3 4
 
 
 
@@ -1196,11 +1146,191 @@ _mm_set1_pi8 (char __b)
 
 
 
-# 1 "/usr/include/bits/waitflags.h" 1 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/waitflags.h" 1 3 4
+# 50 "/usr/include/x86_64-linux-gnu/bits/waitflags.h" 3 4
+typedef enum
+{
+  P_ALL,
+  P_PID,
+  P_PGID
+} idtype_t;
+# 42 "/usr/include/stdlib.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/waitstatus.h" 1 3 4
+# 64 "/usr/include/x86_64-linux-gnu/bits/waitstatus.h" 3 4
+# 1 "/usr/include/endian.h" 1 3 4
+# 36 "/usr/include/endian.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/endian.h" 1 3 4
+# 37 "/usr/include/endian.h" 2 3 4
+# 60 "/usr/include/endian.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/byteswap.h" 1 3 4
+# 27 "/usr/include/x86_64-linux-gnu/bits/byteswap.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/types.h" 1 3 4
+# 27 "/usr/include/x86_64-linux-gnu/bits/types.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 28 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
+
+
+typedef unsigned char __u_char;
+typedef unsigned short int __u_short;
+typedef unsigned int __u_int;
+typedef unsigned long int __u_long;
+
+
+typedef signed char __int8_t;
+typedef unsigned char __uint8_t;
+typedef signed short int __int16_t;
+typedef unsigned short int __uint16_t;
+typedef signed int __int32_t;
+typedef unsigned int __uint32_t;
+
+typedef signed long int __int64_t;
+typedef unsigned long int __uint64_t;
+
+
+
+
+
+
+
+typedef long int __quad_t;
+typedef unsigned long int __u_quad_t;
+# 121 "/usr/include/x86_64-linux-gnu/bits/types.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/typesizes.h" 1 3 4
+# 122 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
+
+
+typedef unsigned long int __dev_t;
+typedef unsigned int __uid_t;
+typedef unsigned int __gid_t;
+typedef unsigned long int __ino_t;
+typedef unsigned long int __ino64_t;
+typedef unsigned int __mode_t;
+typedef unsigned long int __nlink_t;
+typedef long int __off_t;
+typedef long int __off64_t;
+typedef int __pid_t;
+typedef struct { int __val[2]; } __fsid_t;
+typedef long int __clock_t;
+typedef unsigned long int __rlim_t;
+typedef unsigned long int __rlim64_t;
+typedef unsigned int __id_t;
+typedef long int __time_t;
+typedef unsigned int __useconds_t;
+typedef long int __suseconds_t;
+
+typedef int __daddr_t;
+typedef int __key_t;
+
+
+typedef int __clockid_t;
+
+
+typedef void * __timer_t;
+
+
+typedef long int __blksize_t;
+
+
+
+
+typedef long int __blkcnt_t;
+typedef long int __blkcnt64_t;
+
+
+typedef unsigned long int __fsblkcnt_t;
+typedef unsigned long int __fsblkcnt64_t;
+
+
+typedef unsigned long int __fsfilcnt_t;
+typedef unsigned long int __fsfilcnt64_t;
+
+
+typedef long int __fsword_t;
+
+typedef long int __ssize_t;
+
+
+typedef long int __syscall_slong_t;
+
+typedef unsigned long int __syscall_ulong_t;
+
+
+
+typedef __off64_t __loff_t;
+typedef __quad_t *__qaddr_t;
+typedef char *__caddr_t;
+
+
+typedef long int __intptr_t;
+
+
+typedef unsigned int __socklen_t;
+# 28 "/usr/include/x86_64-linux-gnu/bits/byteswap.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 29 "/usr/include/x86_64-linux-gnu/bits/byteswap.h" 2 3 4
+
+
+
+
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/byteswap-16.h" 1 3 4
+# 36 "/usr/include/x86_64-linux-gnu/bits/byteswap.h" 2 3 4
+# 44 "/usr/include/x86_64-linux-gnu/bits/byteswap.h" 3 4
+static __inline unsigned int
+__bswap_32 (unsigned int __bsx)
+{
+  return __builtin_bswap32 (__bsx);
+}
+# 108 "/usr/include/x86_64-linux-gnu/bits/byteswap.h" 3 4
+static __inline __uint64_t
+__bswap_64 (__uint64_t __bsx)
+{
+  return __builtin_bswap64 (__bsx);
+}
+# 61 "/usr/include/endian.h" 2 3 4
+# 65 "/usr/include/x86_64-linux-gnu/bits/waitstatus.h" 2 3 4
+
+union wait
+  {
+    int w_status;
+    struct
+      {
+
+ unsigned int __w_termsig:7;
+ unsigned int __w_coredump:1;
+ unsigned int __w_retcode:8;
+ unsigned int:16;
+
+
+
+
+
+
+
+      } __wait_terminated;
+    struct
+      {
+
+ unsigned int __w_stopval:8;
+ unsigned int __w_stopsig:8;
+ unsigned int:16;
+
+
+
+
+
+
+      } __wait_stopped;
+  };
 # 43 "/usr/include/stdlib.h" 2 3 4
-# 1 "/usr/include/bits/waitstatus.h" 1 3 4
-# 44 "/usr/include/stdlib.h" 2 3 4
-# 57 "/usr/include/stdlib.h" 3 4
+# 67 "/usr/include/stdlib.h" 3 4
+typedef union
+  {
+    union wait *__uptr;
+    int *__iptr;
+  } __WAIT_STATUS __attribute__ ((__transparent_union__));
+# 95 "/usr/include/stdlib.h" 3 4
 
 
 typedef struct
@@ -1230,7 +1360,7 @@ __extension__ typedef struct
   } lldiv_t;
 
 
-# 101 "/usr/include/stdlib.h" 3 4
+# 139 "/usr/include/stdlib.h" 3 4
 extern size_t __ctype_get_mb_cur_max (void) __attribute__ ((__nothrow__ , __leaf__)) ;
 
 
@@ -1310,7 +1440,7 @@ extern unsigned long long int strtoull (const char *__restrict __nptr,
      char **__restrict __endptr, int __base)
      __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1)));
 
-# 253 "/usr/include/stdlib.h" 3 4
+# 276 "/usr/include/stdlib.h" 3 4
 
 extern __inline __attribute__ ((__gnu_inline__)) int
 __attribute__ ((__nothrow__ , __leaf__)) atoi (const char *__nptr)
@@ -1332,7 +1462,7 @@ __attribute__ ((__nothrow__ , __leaf__)) atoll (const char *__nptr)
   return strtoll (__nptr, (char **) ((void *)0), 10);
 }
 
-# 282 "/usr/include/stdlib.h" 3 4
+# 305 "/usr/include/stdlib.h" 3 4
 extern char *l64a (long int __n) __attribute__ ((__nothrow__ , __leaf__)) ;
 
 
@@ -1342,121 +1472,11 @@ extern long int a64l (const char *__s)
 
 
 
-# 1 "/usr/include/sys/types.h" 1 3 4
-# 27 "/usr/include/sys/types.h" 3 4
-
-
-# 1 "/usr/include/bits/types.h" 1 3 4
-# 27 "/usr/include/bits/types.h" 3 4
-# 1 "/usr/include/bits/wordsize.h" 1 3 4
-# 28 "/usr/include/bits/types.h" 2 3 4
-
-
-typedef unsigned char __u_char;
-typedef unsigned short int __u_short;
-typedef unsigned int __u_int;
-typedef unsigned long int __u_long;
-
-
-typedef signed char __int8_t;
-typedef unsigned char __uint8_t;
-typedef signed short int __int16_t;
-typedef unsigned short int __uint16_t;
-typedef signed int __int32_t;
-typedef unsigned int __uint32_t;
-
-typedef signed long int __int64_t;
-typedef unsigned long int __uint64_t;
+# 1 "/usr/include/x86_64-linux-gnu/sys/types.h" 1 3 4
+# 27 "/usr/include/x86_64-linux-gnu/sys/types.h" 3 4
 
 
 
-
-
-
-
-typedef long int __quad_t;
-typedef unsigned long int __u_quad_t;
-
-
-
-
-
-
-
-typedef long int __intmax_t;
-typedef unsigned long int __uintmax_t;
-# 130 "/usr/include/bits/types.h" 3 4
-# 1 "/usr/include/bits/typesizes.h" 1 3 4
-# 131 "/usr/include/bits/types.h" 2 3 4
-
-
-typedef unsigned long int __dev_t;
-typedef unsigned int __uid_t;
-typedef unsigned int __gid_t;
-typedef unsigned long int __ino_t;
-typedef unsigned long int __ino64_t;
-typedef unsigned int __mode_t;
-typedef unsigned long int __nlink_t;
-typedef long int __off_t;
-typedef long int __off64_t;
-typedef int __pid_t;
-typedef struct { int __val[2]; } __fsid_t;
-typedef long int __clock_t;
-typedef unsigned long int __rlim_t;
-typedef unsigned long int __rlim64_t;
-typedef unsigned int __id_t;
-typedef long int __time_t;
-typedef unsigned int __useconds_t;
-typedef long int __suseconds_t;
-
-typedef int __daddr_t;
-typedef int __key_t;
-
-
-typedef int __clockid_t;
-
-
-typedef void * __timer_t;
-
-
-typedef long int __blksize_t;
-
-
-
-
-typedef long int __blkcnt_t;
-typedef long int __blkcnt64_t;
-
-
-typedef unsigned long int __fsblkcnt_t;
-typedef unsigned long int __fsblkcnt64_t;
-
-
-typedef unsigned long int __fsfilcnt_t;
-typedef unsigned long int __fsfilcnt64_t;
-
-
-typedef long int __fsword_t;
-
-typedef long int __ssize_t;
-
-
-typedef long int __syscall_slong_t;
-
-typedef unsigned long int __syscall_ulong_t;
-
-
-
-typedef __off64_t __loff_t;
-typedef __quad_t *__qaddr_t;
-typedef char *__caddr_t;
-
-
-typedef long int __intptr_t;
-
-
-typedef unsigned int __socklen_t;
-# 30 "/usr/include/sys/types.h" 2 3 4
 
 
 
@@ -1476,7 +1496,7 @@ typedef __loff_t loff_t;
 
 
 typedef __ino_t ino_t;
-# 60 "/usr/include/sys/types.h" 3 4
+# 60 "/usr/include/x86_64-linux-gnu/sys/types.h" 3 4
 typedef __dev_t dev_t;
 
 
@@ -1504,7 +1524,7 @@ typedef __uid_t uid_t;
 
 
 typedef __off_t off_t;
-# 98 "/usr/include/sys/types.h" 3 4
+# 98 "/usr/include/x86_64-linux-gnu/sys/types.h" 3 4
 typedef __pid_t pid_t;
 
 
@@ -1530,66 +1550,37 @@ typedef __caddr_t caddr_t;
 
 
 typedef __key_t key_t;
-
-
-
-
-# 1 "/usr/include/bits/types/clock_t.h" 1 3 4
-
-
-
-
-
+# 132 "/usr/include/x86_64-linux-gnu/sys/types.h" 3 4
+# 1 "/usr/include/time.h" 1 3 4
+# 57 "/usr/include/time.h" 3 4
 
 
 typedef __clock_t clock_t;
 
 
 
-
-# 128 "/usr/include/sys/types.h" 2 3 4
-
-# 1 "/usr/include/bits/types/clockid_t.h" 1 3 4
-
-
-
-
-
-
-typedef __clockid_t clockid_t;
-# 130 "/usr/include/sys/types.h" 2 3 4
-# 1 "/usr/include/bits/types/time_t.h" 1 3 4
-
-
-
-
-
+# 73 "/usr/include/time.h" 3 4
 
 
 typedef __time_t time_t;
 
 
 
-# 131 "/usr/include/sys/types.h" 2 3 4
-# 1 "/usr/include/bits/types/timer_t.h" 1 3 4
-
-
-
-
-
-
+# 91 "/usr/include/time.h" 3 4
+typedef __clockid_t clockid_t;
+# 103 "/usr/include/time.h" 3 4
 typedef __timer_t timer_t;
-# 132 "/usr/include/sys/types.h" 2 3 4
-# 145 "/usr/include/sys/types.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include/stddef.h" 1 3 4
-# 146 "/usr/include/sys/types.h" 2 3 4
+# 133 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
+# 146 "/usr/include/x86_64-linux-gnu/sys/types.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.9/include/stddef.h" 1 3 4
+# 147 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
 
 
 
 typedef unsigned long int ulong;
 typedef unsigned short int ushort;
 typedef unsigned int uint;
-# 193 "/usr/include/sys/types.h" 3 4
+# 194 "/usr/include/x86_64-linux-gnu/sys/types.h" 3 4
 typedef int int8_t __attribute__ ((__mode__ (__QI__)));
 typedef int int16_t __attribute__ ((__mode__ (__HI__)));
 typedef int int32_t __attribute__ ((__mode__ (__SI__)));
@@ -1602,71 +1593,18 @@ typedef unsigned int u_int32_t __attribute__ ((__mode__ (__SI__)));
 typedef unsigned int u_int64_t __attribute__ ((__mode__ (__DI__)));
 
 typedef int register_t __attribute__ ((__mode__ (__word__)));
-# 215 "/usr/include/sys/types.h" 3 4
-# 1 "/usr/include/endian.h" 1 3 4
-# 36 "/usr/include/endian.h" 3 4
-# 1 "/usr/include/bits/endian.h" 1 3 4
-# 37 "/usr/include/endian.h" 2 3 4
-# 60 "/usr/include/endian.h" 3 4
-# 1 "/usr/include/bits/byteswap.h" 1 3 4
-# 28 "/usr/include/bits/byteswap.h" 3 4
-# 1 "/usr/include/bits/wordsize.h" 1 3 4
-# 29 "/usr/include/bits/byteswap.h" 2 3 4
+# 219 "/usr/include/x86_64-linux-gnu/sys/types.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/sys/select.h" 1 3 4
+# 30 "/usr/include/x86_64-linux-gnu/sys/select.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/select.h" 1 3 4
+# 22 "/usr/include/x86_64-linux-gnu/bits/select.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 23 "/usr/include/x86_64-linux-gnu/bits/select.h" 2 3 4
+# 31 "/usr/include/x86_64-linux-gnu/sys/select.h" 2 3 4
 
 
-
-
-
-
-# 1 "/usr/include/bits/byteswap-16.h" 1 3 4
-# 36 "/usr/include/bits/byteswap.h" 2 3 4
-# 44 "/usr/include/bits/byteswap.h" 3 4
-static __inline unsigned int
-__bswap_32 (unsigned int __bsx)
-{
-  return __builtin_bswap32 (__bsx);
-}
-# 108 "/usr/include/bits/byteswap.h" 3 4
-static __inline __uint64_t
-__bswap_64 (__uint64_t __bsx)
-{
-  return __builtin_bswap64 (__bsx);
-}
-# 61 "/usr/include/endian.h" 2 3 4
-# 1 "/usr/include/bits/uintn-identity.h" 1 3 4
-# 32 "/usr/include/bits/uintn-identity.h" 3 4
-static __inline __uint16_t
-__uint16_identity (__uint16_t __x)
-{
-  return __x;
-}
-
-static __inline __uint32_t
-__uint32_identity (__uint32_t __x)
-{
-  return __x;
-}
-
-static __inline __uint64_t
-__uint64_identity (__uint64_t __x)
-{
-  return __x;
-}
-# 62 "/usr/include/endian.h" 2 3 4
-# 216 "/usr/include/sys/types.h" 2 3 4
-
-
-# 1 "/usr/include/sys/select.h" 1 3 4
-# 30 "/usr/include/sys/select.h" 3 4
-# 1 "/usr/include/bits/select.h" 1 3 4
-# 22 "/usr/include/bits/select.h" 3 4
-# 1 "/usr/include/bits/wordsize.h" 1 3 4
-# 23 "/usr/include/bits/select.h" 2 3 4
-# 31 "/usr/include/sys/select.h" 2 3 4
-
-
-# 1 "/usr/include/bits/sigset.h" 1 3 4
-# 22 "/usr/include/bits/sigset.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/sigset.h" 1 3 4
+# 22 "/usr/include/x86_64-linux-gnu/bits/sigset.h" 3 4
 typedef int __sig_atomic_t;
 
 
@@ -1676,7 +1614,7 @@ typedef struct
   {
     unsigned long int __val[(1024 / (8 * sizeof (unsigned long int)))];
   } __sigset_t;
-# 34 "/usr/include/sys/select.h" 2 3 4
+# 34 "/usr/include/x86_64-linux-gnu/sys/select.h" 2 3 4
 
 
 
@@ -1685,36 +1623,24 @@ typedef __sigset_t sigset_t;
 
 
 
-# 1 "/usr/include/bits/types/struct_timeval.h" 1 3 4
 
-
-
-
-
-
-
-struct timeval
-{
-  __time_t tv_sec;
-  __suseconds_t tv_usec;
-};
-# 43 "/usr/include/sys/select.h" 2 3 4
-
-# 1 "/usr/include/bits/types/struct_timespec.h" 1 3 4
-
-
-
-
-
-
-
+# 1 "/usr/include/time.h" 1 3 4
+# 120 "/usr/include/time.h" 3 4
 struct timespec
-{
-  __time_t tv_sec;
-  __syscall_slong_t tv_nsec;
-};
-# 45 "/usr/include/sys/select.h" 2 3 4
+  {
+    __time_t tv_sec;
+    __syscall_slong_t tv_nsec;
+  };
+# 44 "/usr/include/x86_64-linux-gnu/sys/select.h" 2 3 4
 
+# 1 "/usr/include/x86_64-linux-gnu/bits/time.h" 1 3 4
+# 30 "/usr/include/x86_64-linux-gnu/bits/time.h" 3 4
+struct timeval
+  {
+    __time_t tv_sec;
+    __suseconds_t tv_usec;
+  };
+# 46 "/usr/include/x86_64-linux-gnu/sys/select.h" 2 3 4
 
 
 typedef __suseconds_t suseconds_t;
@@ -1724,7 +1650,7 @@ typedef __suseconds_t suseconds_t;
 
 
 typedef long int __fd_mask;
-# 64 "/usr/include/sys/select.h" 3 4
+# 64 "/usr/include/x86_64-linux-gnu/sys/select.h" 3 4
 typedef struct
   {
 
@@ -1744,51 +1670,62 @@ typedef struct
 
 
 typedef __fd_mask fd_mask;
-# 96 "/usr/include/sys/select.h" 3 4
+# 96 "/usr/include/x86_64-linux-gnu/sys/select.h" 3 4
 
-# 106 "/usr/include/sys/select.h" 3 4
+# 106 "/usr/include/x86_64-linux-gnu/sys/select.h" 3 4
 extern int select (int __nfds, fd_set *__restrict __readfds,
      fd_set *__restrict __writefds,
      fd_set *__restrict __exceptfds,
      struct timeval *__restrict __timeout);
-# 118 "/usr/include/sys/select.h" 3 4
+# 118 "/usr/include/x86_64-linux-gnu/sys/select.h" 3 4
 extern int pselect (int __nfds, fd_set *__restrict __readfds,
       fd_set *__restrict __writefds,
       fd_set *__restrict __exceptfds,
       const struct timespec *__restrict __timeout,
       const __sigset_t *__restrict __sigmask);
-# 131 "/usr/include/sys/select.h" 3 4
+# 131 "/usr/include/x86_64-linux-gnu/sys/select.h" 3 4
 
-# 219 "/usr/include/sys/types.h" 2 3 4
-
-
+# 220 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
 
 
+# 1 "/usr/include/x86_64-linux-gnu/sys/sysmacros.h" 1 3 4
+# 24 "/usr/include/x86_64-linux-gnu/sys/sysmacros.h" 3 4
 
 
-
-# 1 "/usr/include/sys/sysmacros.h" 1 3 4
-# 41 "/usr/include/sys/sysmacros.h" 3 4
-# 1 "/usr/include/bits/sysmacros.h" 1 3 4
-# 42 "/usr/include/sys/sysmacros.h" 2 3 4
-# 71 "/usr/include/sys/sysmacros.h" 3 4
-
-
-extern unsigned int gnu_dev_major (__dev_t __dev) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
-extern unsigned int gnu_dev_minor (__dev_t __dev) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
-extern __dev_t gnu_dev_makedev (unsigned int __major, unsigned int __minor) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
-
+__extension__
+extern unsigned int gnu_dev_major (unsigned long long int __dev)
+     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+__extension__
+extern unsigned int gnu_dev_minor (unsigned long long int __dev)
+     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+__extension__
+extern unsigned long long int gnu_dev_makedev (unsigned int __major,
+            unsigned int __minor)
+     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
 
 
-__extension__ extern __inline __attribute__ ((__gnu_inline__)) __attribute__ ((__const__)) unsigned int __attribute__ ((__nothrow__ , __leaf__)) gnu_dev_major (__dev_t __dev) { unsigned int __major; __major = ((__dev & (__dev_t) 0x00000000000fff00u) >> 8); __major |= ((__dev & (__dev_t) 0xfffff00000000000u) >> 32); return __major; }
-__extension__ extern __inline __attribute__ ((__gnu_inline__)) __attribute__ ((__const__)) unsigned int __attribute__ ((__nothrow__ , __leaf__)) gnu_dev_minor (__dev_t __dev) { unsigned int __minor; __minor = ((__dev & (__dev_t) 0x00000000000000ffu) >> 0); __minor |= ((__dev & (__dev_t) 0x00000ffffff00000u) >> 12); return __minor; }
-__extension__ extern __inline __attribute__ ((__gnu_inline__)) __attribute__ ((__const__)) __dev_t __attribute__ ((__nothrow__ , __leaf__)) gnu_dev_makedev (unsigned int __major, unsigned int __minor) { __dev_t __dev; __dev = (((__dev_t) (__major & 0x00000fffu)) << 8); __dev |= (((__dev_t) (__major & 0xfffff000u)) << 32); __dev |= (((__dev_t) (__minor & 0x000000ffu)) << 0); __dev |= (((__dev_t) (__minor & 0xffffff00u)) << 12); return __dev; }
+__extension__ extern __inline __attribute__ ((__gnu_inline__)) __attribute__ ((__const__)) unsigned int
+__attribute__ ((__nothrow__ , __leaf__)) gnu_dev_major (unsigned long long int __dev)
+{
+  return ((__dev >> 8) & 0xfff) | ((unsigned int) (__dev >> 32) & ~0xfff);
+}
+
+__extension__ extern __inline __attribute__ ((__gnu_inline__)) __attribute__ ((__const__)) unsigned int
+__attribute__ ((__nothrow__ , __leaf__)) gnu_dev_minor (unsigned long long int __dev)
+{
+  return (__dev & 0xff) | ((unsigned int) (__dev >> 12) & ~0xff);
+}
+
+__extension__ extern __inline __attribute__ ((__gnu_inline__)) __attribute__ ((__const__)) unsigned long long int
+__attribute__ ((__nothrow__ , __leaf__)) gnu_dev_makedev (unsigned int __major, unsigned int __minor)
+{
+  return ((__minor & 0xff) | ((__major & 0xfff) << 8)
+   | (((unsigned long long int) (__minor & ~0xff)) << 12)
+   | (((unsigned long long int) (__major & ~0xfff)) << 32));
+}
 
 
-
-
-# 227 "/usr/include/sys/types.h" 2 3 4
-
+# 223 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
 
 
 
@@ -1810,12 +1747,12 @@ typedef __fsblkcnt_t fsblkcnt_t;
 
 
 typedef __fsfilcnt_t fsfilcnt_t;
-# 275 "/usr/include/sys/types.h" 3 4
-# 1 "/usr/include/bits/pthreadtypes.h" 1 3 4
-# 21 "/usr/include/bits/pthreadtypes.h" 3 4
-# 1 "/usr/include/bits/wordsize.h" 1 3 4
-# 22 "/usr/include/bits/pthreadtypes.h" 2 3 4
-# 60 "/usr/include/bits/pthreadtypes.h" 3 4
+# 270 "/usr/include/x86_64-linux-gnu/sys/types.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h" 1 3 4
+# 21 "/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 22 "/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h" 2 3 4
+# 60 "/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h" 3 4
 typedef unsigned long int pthread_t;
 
 
@@ -1836,7 +1773,7 @@ typedef struct __pthread_internal_list
   struct __pthread_internal_list *__prev;
   struct __pthread_internal_list *__next;
 } __pthread_list_t;
-# 90 "/usr/include/bits/pthreadtypes.h" 3 4
+# 90 "/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h" 3 4
 typedef union
 {
   struct __pthread_mutex_s
@@ -1854,7 +1791,7 @@ typedef union
     short __spins;
     short __elision;
     __pthread_list_t __list;
-# 125 "/usr/include/bits/pthreadtypes.h" 3 4
+# 124 "/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h" 3 4
   } __data;
   char __size[40];
   long int __align;
@@ -1873,27 +1810,14 @@ typedef union
 {
   struct
   {
-    __extension__ union
-    {
-      __extension__ unsigned long long int __wseq;
-      struct {
- unsigned int __low;
- unsigned int __high;
-      } __wseq32;
-    };
-    __extension__ union
-    {
-      __extension__ unsigned long long int __g1_start;
-      struct {
- unsigned int __low;
- unsigned int __high;
-      } __g1_start32;
-    };
-    unsigned int __g_refs[2];
-    unsigned int __g_size[2];
-    unsigned int __g1_orig_size;
-    unsigned int __wrefs;
-    unsigned int __g_signals[2];
+    int __lock;
+    unsigned int __futex;
+    __extension__ unsigned long long int __total_seq;
+    __extension__ unsigned long long int __wakeup_seq;
+    __extension__ unsigned long long int __woken_seq;
+    void *__mutex;
+    unsigned int __nwaiters;
+    unsigned int __broadcast_seq;
   } __data;
   char __size[48];
   __extension__ long long int __align;
@@ -1922,29 +1846,22 @@ typedef union
 
   struct
   {
-    unsigned int __readers;
-    unsigned int __writers;
-    unsigned int __wrphase_futex;
-    unsigned int __writers_futex;
-    unsigned int __pad3;
-    unsigned int __pad4;
-    int __cur_writer;
+    int __lock;
+    unsigned int __nr_readers;
+    unsigned int __readers_wakeup;
+    unsigned int __writer_wakeup;
+    unsigned int __nr_readers_queued;
+    unsigned int __nr_writers_queued;
+    int __writer;
     int __shared;
-    signed char __rwelision;
-
-
-
-
-    unsigned char __pad1[7];
-
-
+    unsigned long int __pad1;
     unsigned long int __pad2;
 
 
     unsigned int __flags;
 
   } __data;
-# 233 "/usr/include/bits/pthreadtypes.h" 3 4
+# 211 "/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h" 3 4
   char __size[56];
   long int __align;
 } pthread_rwlock_t;
@@ -1975,11 +1892,11 @@ typedef union
   char __size[4];
   int __align;
 } pthread_barrierattr_t;
-# 276 "/usr/include/sys/types.h" 2 3 4
+# 271 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
 
 
 
-# 292 "/usr/include/stdlib.h" 2 3 4
+# 315 "/usr/include/stdlib.h" 2 3 4
 
 
 
@@ -2159,7 +2076,7 @@ extern void cfree (void *__ptr) __attribute__ ((__nothrow__ , __leaf__));
 
 # 1 "/usr/include/alloca.h" 1 3 4
 # 24 "/usr/include/alloca.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.9/include/stddef.h" 1 3 4
 # 25 "/usr/include/alloca.h" 2 3 4
 
 
@@ -2175,7 +2092,7 @@ extern void *alloca (size_t __size) __attribute__ ((__nothrow__ , __leaf__));
 
 
 
-# 470 "/usr/include/stdlib.h" 2 3 4
+# 493 "/usr/include/stdlib.h" 2 3 4
 
 
 
@@ -2188,14 +2105,7 @@ extern void *valloc (size_t __size) __attribute__ ((__nothrow__ , __leaf__)) __a
 
 extern int posix_memalign (void **__memptr, size_t __alignment, size_t __size)
      __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1))) ;
-
-
-
-
-extern void *aligned_alloc (size_t __alignment, size_t __size)
-     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__malloc__)) __attribute__ ((__alloc_size__ (2))) ;
-
-
+# 513 "/usr/include/stdlib.h" 3 4
 
 
 extern void abort (void) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
@@ -2203,16 +2113,7 @@ extern void abort (void) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ 
 
 
 extern int atexit (void (*__func) (void)) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1)));
-
-
-
-
-
-
-
-extern int at_quick_exit (void (*__func) (void)) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1)));
-
-
+# 530 "/usr/include/stdlib.h" 3 4
 
 
 
@@ -2232,7 +2133,7 @@ extern void exit (int __status) __attribute__ ((__nothrow__ , __leaf__)) __attri
 
 
 
-extern void quick_exit (int __status) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
+
 
 
 
@@ -2249,7 +2150,7 @@ extern void _Exit (int __status) __attribute__ ((__nothrow__ , __leaf__)) __attr
 
 extern char *getenv (const char *__name) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1))) ;
 
-# 555 "/usr/include/stdlib.h" 3 4
+# 578 "/usr/include/stdlib.h" 3 4
 extern int putenv (char *__string) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1)));
 
 
@@ -2268,15 +2169,15 @@ extern int unsetenv (const char *__name) __attribute__ ((__nothrow__ , __leaf__)
 
 
 extern int clearenv (void) __attribute__ ((__nothrow__ , __leaf__));
-# 583 "/usr/include/stdlib.h" 3 4
+# 606 "/usr/include/stdlib.h" 3 4
 extern char *mktemp (char *__template) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1)));
-# 596 "/usr/include/stdlib.h" 3 4
+# 620 "/usr/include/stdlib.h" 3 4
 extern int mkstemp (char *__template) __attribute__ ((__nonnull__ (1))) ;
-# 618 "/usr/include/stdlib.h" 3 4
+# 642 "/usr/include/stdlib.h" 3 4
 extern int mkstemps (char *__template, int __suffixlen) __attribute__ ((__nonnull__ (1))) ;
-# 639 "/usr/include/stdlib.h" 3 4
+# 663 "/usr/include/stdlib.h" 3 4
 extern char *mkdtemp (char *__template) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1))) ;
-# 688 "/usr/include/stdlib.h" 3 4
+# 712 "/usr/include/stdlib.h" 3 4
 
 
 
@@ -2284,7 +2185,7 @@ extern char *mkdtemp (char *__template) __attribute__ ((__nothrow__ , __leaf__))
 
 extern int system (const char *__command) ;
 
-# 710 "/usr/include/stdlib.h" 3 4
+# 734 "/usr/include/stdlib.h" 3 4
 extern char *realpath (const char *__restrict __name,
          char *__restrict __resolved) __attribute__ ((__nothrow__ , __leaf__)) ;
 
@@ -2294,7 +2195,7 @@ extern char *realpath (const char *__restrict __name,
 
 
 typedef int (*__compar_fn_t) (const void *, const void *);
-# 728 "/usr/include/stdlib.h" 3 4
+# 752 "/usr/include/stdlib.h" 3 4
 
 
 
@@ -2303,8 +2204,8 @@ extern void *bsearch (const void *__key, const void *__base,
      __attribute__ ((__nonnull__ (1, 2, 5))) ;
 
 
-# 1 "/usr/include/bits/stdlib-bsearch.h" 1 3 4
-# 19 "/usr/include/bits/stdlib-bsearch.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h" 1 3 4
+# 19 "/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h" 3 4
 extern __inline __attribute__ ((__gnu_inline__)) void *
 bsearch (const void *__key, const void *__base, size_t __nmemb, size_t __size,
   __compar_fn_t __compar)
@@ -2330,14 +2231,14 @@ bsearch (const void *__key, const void *__base, size_t __nmemb, size_t __size,
 
   return ((void *)0);
 }
-# 737 "/usr/include/stdlib.h" 2 3 4
+# 761 "/usr/include/stdlib.h" 2 3 4
 
 
 
 
 extern void qsort (void *__base, size_t __nmemb, size_t __size,
      __compar_fn_t __compar) __attribute__ ((__nonnull__ (1, 4)));
-# 751 "/usr/include/stdlib.h" 3 4
+# 775 "/usr/include/stdlib.h" 3 4
 extern int abs (int __x) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__)) ;
 extern long int labs (long int __x) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__)) ;
 
@@ -2364,7 +2265,7 @@ __extension__ extern lldiv_t lldiv (long long int __numer,
         long long int __denom)
      __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__)) ;
 
-# 788 "/usr/include/stdlib.h" 3 4
+# 812 "/usr/include/stdlib.h" 3 4
 extern char *ecvt (double __value, int __ndigit, int *__restrict __decpt,
      int *__restrict __sign) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (3, 4))) ;
 
@@ -2442,17 +2343,18 @@ extern size_t wcstombs (char *__restrict __s,
 
 
 extern int rpmatch (const char *__response) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1))) ;
-# 875 "/usr/include/stdlib.h" 3 4
+# 899 "/usr/include/stdlib.h" 3 4
 extern int getsubopt (char **__restrict __optionp,
         char *const *__restrict __tokens,
         char **__restrict __valuep)
      __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1, 2, 3))) ;
-# 927 "/usr/include/stdlib.h" 3 4
+# 951 "/usr/include/stdlib.h" 3 4
 extern int getloadavg (double __loadavg[], int __nelem)
      __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1)));
-# 937 "/usr/include/stdlib.h" 3 4
-# 1 "/usr/include/bits/stdlib-float.h" 1 3 4
-# 24 "/usr/include/bits/stdlib-float.h" 3 4
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/stdlib-float.h" 1 3 4
+# 24 "/usr/include/x86_64-linux-gnu/bits/stdlib-float.h" 3 4
 
 extern __inline __attribute__ ((__gnu_inline__)) double
 __attribute__ ((__nothrow__ , __leaf__)) atof (const char *__nptr)
@@ -2460,10 +2362,10 @@ __attribute__ ((__nothrow__ , __leaf__)) atof (const char *__nptr)
   return strtod (__nptr, (char **) ((void *)0));
 }
 
-# 938 "/usr/include/stdlib.h" 2 3 4
-# 950 "/usr/include/stdlib.h" 3 4
+# 956 "/usr/include/stdlib.h" 2 3 4
+# 968 "/usr/include/stdlib.h" 3 4
 
-# 28 "/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include/mm_malloc.h" 2 3 4
+# 28 "/usr/lib/gcc/x86_64-linux-gnu/4.9/include/mm_malloc.h" 2 3 4
 
 
 
@@ -2474,25 +2376,25 @@ extern int posix_memalign (void **, size_t, size_t);
 
 
 static __inline void *
-_mm_malloc (size_t __size, size_t __alignment)
+_mm_malloc (size_t size, size_t alignment)
 {
-  void *__ptr;
-  if (__alignment == 1)
-    return malloc (__size);
-  if (__alignment == 2 || (sizeof (void *) == 8 && __alignment == 4))
-    __alignment = sizeof (void *);
-  if (posix_memalign (&__ptr, __alignment, __size) == 0)
-    return __ptr;
+  void *ptr;
+  if (alignment == 1)
+    return malloc (size);
+  if (alignment == 2 || (sizeof (void *) == 8 && alignment == 4))
+    alignment = sizeof (void *);
+  if (posix_memalign (&ptr, alignment, size) == 0)
+    return ptr;
   else
     return ((void *)0);
 }
 
 static __inline void
-_mm_free (void *__ptr)
+_mm_free (void * ptr)
 {
-  free (__ptr);
+  free (ptr);
 }
-# 35 "/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include/xmmintrin.h" 2 3 4
+# 35 "/usr/lib/gcc/x86_64-linux-gnu/4.9/include/xmmintrin.h" 2 3 4
 
 
 enum _mm_hint
@@ -2514,15 +2416,12 @@ _mm_prefetch (const void *__P, enum _mm_hint __I)
 {
   __builtin_prefetch (__P, (__I & 0x4) >> 2, __I & 0x3);
 }
-# 69 "/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include/xmmintrin.h" 3 4
+# 69 "/usr/lib/gcc/x86_64-linux-gnu/4.9/include/xmmintrin.h" 3 4
 typedef float __m128 __attribute__ ((__vector_size__ (16), __may_alias__));
 
 
-typedef float __m128_u __attribute__ ((__vector_size__ (16), __may_alias__, __aligned__ (1)));
-
-
 typedef float __v4sf __attribute__ ((__vector_size__ (16)));
-# 109 "/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include/xmmintrin.h" 3 4
+# 106 "/usr/lib/gcc/x86_64-linux-gnu/4.9/include/xmmintrin.h" 3 4
 extern __inline __m128 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_undefined_ps (void)
 {
@@ -2600,25 +2499,25 @@ _mm_max_ss (__m128 __A, __m128 __B)
 extern __inline __m128 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_add_ps (__m128 __A, __m128 __B)
 {
-  return (__m128) ((__v4sf)__A + (__v4sf)__B);
+  return (__m128) __builtin_ia32_addps ((__v4sf)__A, (__v4sf)__B);
 }
 
 extern __inline __m128 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_sub_ps (__m128 __A, __m128 __B)
 {
-  return (__m128) ((__v4sf)__A - (__v4sf)__B);
+  return (__m128) __builtin_ia32_subps ((__v4sf)__A, (__v4sf)__B);
 }
 
 extern __inline __m128 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_mul_ps (__m128 __A, __m128 __B)
 {
-  return (__m128) ((__v4sf)__A * (__v4sf)__B);
+  return (__m128) __builtin_ia32_mulps ((__v4sf)__A, (__v4sf)__B);
 }
 
 extern __inline __m128 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_div_ps (__m128 __A, __m128 __B)
 {
-  return (__m128) ((__v4sf)__A / (__v4sf)__B);
+  return (__m128) __builtin_ia32_divps ((__v4sf)__A, (__v4sf)__B);
 }
 
 extern __inline __m128 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
@@ -3341,14 +3240,14 @@ _mm_load_ps1 (float const *__P)
 extern __inline __m128 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_load_ps (float const *__P)
 {
-  return *(__m128 *)__P;
+  return (__m128) *(__v4sf *)__P;
 }
 
 
 extern __inline __m128 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_loadu_ps (float const *__P)
 {
-  return *(__m128_u *)__P;
+  return (__m128) __builtin_ia32_loadups (__P);
 }
 
 
@@ -3377,27 +3276,27 @@ _mm_setr_ps (float __Z, float __Y, float __X, float __W)
 extern __inline void __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_store_ss (float *__P, __m128 __A)
 {
-  *__P = ((__v4sf)__A)[0];
+  *__P = __builtin_ia32_vec_ext_v4sf ((__v4sf)__A, 0);
 }
 
 extern __inline float __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_cvtss_f32 (__m128 __A)
 {
-  return ((__v4sf)__A)[0];
+  return __builtin_ia32_vec_ext_v4sf ((__v4sf)__A, 0);
 }
 
 
 extern __inline void __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_store_ps (float *__P, __m128 __A)
 {
-  *(__m128 *)__P = __A;
+  *(__v4sf *)__P = (__v4sf)__A;
 }
 
 
 extern __inline void __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_storeu_ps (float *__P, __m128 __A)
 {
-  *(__m128_u *)__P = __A;
+  __builtin_ia32_storeups (__P, (__v4sf)__A);
 }
 
 
@@ -3444,7 +3343,7 @@ _m_pextrw (__m64 const __A, int const __N)
 {
   return _mm_extract_pi16 (__A, __N);
 }
-# 1040 "/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include/xmmintrin.h" 3 4
+# 1037 "/usr/lib/gcc/x86_64-linux-gnu/4.9/include/xmmintrin.h" 3 4
 extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_insert_pi16 (__m64 const __A, int const __D, int const __N)
 {
@@ -3456,7 +3355,7 @@ _m_pinsrw (__m64 const __A, int const __D, int const __N)
 {
   return _mm_insert_pi16 (__A, __D, __N);
 }
-# 1060 "/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include/xmmintrin.h" 3 4
+# 1057 "/usr/lib/gcc/x86_64-linux-gnu/4.9/include/xmmintrin.h" 3 4
 extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_max_pi16 (__m64 __A, __m64 __B)
 {
@@ -3549,7 +3448,7 @@ _m_pshufw (__m64 __A, int const __N)
 {
   return _mm_shuffle_pi16 (__A, __N);
 }
-# 1162 "/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include/xmmintrin.h" 3 4
+# 1159 "/usr/lib/gcc/x86_64-linux-gnu/4.9/include/xmmintrin.h" 3 4
 extern __inline void __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_maskmove_si64 (__m64 __A, __m64 __N, char *__P)
 {
@@ -3624,30 +3523,31 @@ _mm_sfence (void)
 {
   __builtin_ia32_sfence ();
 }
-# 1252 "/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include/xmmintrin.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include/emmintrin.h" 1 3 4
-# 31 "/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include/emmintrin.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include/xmmintrin.h" 1 3 4
-# 32 "/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include/emmintrin.h" 2 3 4
-# 40 "/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include/emmintrin.h" 3 4
+
+
+
+
+extern __inline void __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+_mm_pause (void)
+{
+  __builtin_ia32_pause ();
+}
+# 1258 "/usr/lib/gcc/x86_64-linux-gnu/4.9/include/xmmintrin.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.9/include/emmintrin.h" 1 3 4
+# 31 "/usr/lib/gcc/x86_64-linux-gnu/4.9/include/emmintrin.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/4.9/include/xmmintrin.h" 1 3 4
+# 32 "/usr/lib/gcc/x86_64-linux-gnu/4.9/include/emmintrin.h" 2 3 4
+# 40 "/usr/lib/gcc/x86_64-linux-gnu/4.9/include/emmintrin.h" 3 4
 typedef double __v2df __attribute__ ((__vector_size__ (16)));
 typedef long long __v2di __attribute__ ((__vector_size__ (16)));
-typedef unsigned long long __v2du __attribute__ ((__vector_size__ (16)));
 typedef int __v4si __attribute__ ((__vector_size__ (16)));
-typedef unsigned int __v4su __attribute__ ((__vector_size__ (16)));
 typedef short __v8hi __attribute__ ((__vector_size__ (16)));
-typedef unsigned short __v8hu __attribute__ ((__vector_size__ (16)));
 typedef char __v16qi __attribute__ ((__vector_size__ (16)));
-typedef unsigned char __v16qu __attribute__ ((__vector_size__ (16)));
 
 
 
 typedef long long __m128i __attribute__ ((__vector_size__ (16), __may_alias__));
 typedef double __m128d __attribute__ ((__vector_size__ (16), __may_alias__));
-
-
-typedef long long __m128i_u __attribute__ ((__vector_size__ (16), __may_alias__, __aligned__ (1)));
-typedef double __m128d_u __attribute__ ((__vector_size__ (16), __may_alias__, __aligned__ (1)));
 
 
 
@@ -3720,7 +3620,7 @@ _mm_load_pd (double const *__P)
 extern __inline __m128d __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_loadu_pd (double const *__P)
 {
-  return *(__m128d_u *)__P;
+  return __builtin_ia32_loadupd (__P);
 }
 
 
@@ -3762,20 +3662,20 @@ _mm_store_pd (double *__P, __m128d __A)
 extern __inline void __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_storeu_pd (double *__P, __m128d __A)
 {
-  *(__m128d_u *)__P = __A;
+  __builtin_ia32_storeupd (__P, __A);
 }
 
 
 extern __inline void __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_store_sd (double *__P, __m128d __A)
 {
-  *__P = ((__v2df)__A)[0];
+  *__P = __builtin_ia32_vec_ext_v2df (__A, 0);
 }
 
 extern __inline double __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_cvtsd_f64 (__m128d __A)
 {
-  return ((__v2df)__A)[0];
+  return __builtin_ia32_vec_ext_v2df (__A, 0);
 }
 
 extern __inline void __attribute__((__gnu_inline__, __always_inline__, __artificial__))
@@ -3788,7 +3688,7 @@ _mm_storel_pd (double *__P, __m128d __A)
 extern __inline void __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_storeh_pd (double *__P, __m128d __A)
 {
-  *__P = ((__v2df)__A)[1];
+  *__P = __builtin_ia32_vec_ext_v2df (__A, 1);
 }
 
 
@@ -3823,21 +3723,21 @@ _mm_cvtsi128_si32 (__m128i __A)
 extern __inline long long __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_cvtsi128_si64 (__m128i __A)
 {
-  return ((__v2di)__A)[0];
+  return __builtin_ia32_vec_ext_v2di ((__v2di)__A, 0);
 }
 
 
 extern __inline long long __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_cvtsi128_si64x (__m128i __A)
 {
-  return ((__v2di)__A)[0];
+  return __builtin_ia32_vec_ext_v2di ((__v2di)__A, 0);
 }
 
 
 extern __inline __m128d __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_add_pd (__m128d __A, __m128d __B)
 {
-  return (__m128d) ((__v2df)__A + (__v2df)__B);
+  return (__m128d)__builtin_ia32_addpd ((__v2df)__A, (__v2df)__B);
 }
 
 extern __inline __m128d __attribute__((__gnu_inline__, __always_inline__, __artificial__))
@@ -3849,7 +3749,7 @@ _mm_add_sd (__m128d __A, __m128d __B)
 extern __inline __m128d __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_sub_pd (__m128d __A, __m128d __B)
 {
-  return (__m128d) ((__v2df)__A - (__v2df)__B);
+  return (__m128d)__builtin_ia32_subpd ((__v2df)__A, (__v2df)__B);
 }
 
 extern __inline __m128d __attribute__((__gnu_inline__, __always_inline__, __artificial__))
@@ -3861,7 +3761,7 @@ _mm_sub_sd (__m128d __A, __m128d __B)
 extern __inline __m128d __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_mul_pd (__m128d __A, __m128d __B)
 {
-  return (__m128d) ((__v2df)__A * (__v2df)__B);
+  return (__m128d)__builtin_ia32_mulpd ((__v2df)__A, (__v2df)__B);
 }
 
 extern __inline __m128d __attribute__((__gnu_inline__, __always_inline__, __artificial__))
@@ -3873,7 +3773,7 @@ _mm_mul_sd (__m128d __A, __m128d __B)
 extern __inline __m128d __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_div_pd (__m128d __A, __m128d __B)
 {
-  return (__m128d) ((__v2df)__A / (__v2df)__B);
+  return (__m128d)__builtin_ia32_divpd ((__v2df)__A, (__v2df)__B);
 }
 
 extern __inline __m128d __attribute__((__gnu_inline__, __always_inline__, __artificial__))
@@ -4290,15 +4190,15 @@ _mm_load_si128 (__m128i const *__P)
 }
 
 extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_loadu_si128 (__m128i_u const *__P)
+_mm_loadu_si128 (__m128i const *__P)
 {
-  return *__P;
+  return (__m128i) __builtin_ia32_loaddqu ((char const *)__P);
 }
 
 extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_loadl_epi64 (__m128i_u const *__P)
+_mm_loadl_epi64 (__m128i const *__P)
 {
-  return _mm_set_epi64 ((__m64)0LL, *(__m64_u *)__P);
+  return _mm_set_epi64 ((__m64)0LL, *(__m64 *)__P);
 }
 
 extern __inline void __attribute__((__gnu_inline__, __always_inline__, __artificial__))
@@ -4308,21 +4208,21 @@ _mm_store_si128 (__m128i *__P, __m128i __B)
 }
 
 extern __inline void __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_storeu_si128 (__m128i_u *__P, __m128i __B)
+_mm_storeu_si128 (__m128i *__P, __m128i __B)
 {
-  *__P = __B;
+  __builtin_ia32_storedqu ((char *)__P, (__v16qi)__B);
 }
 
 extern __inline void __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_storel_epi64 (__m128i_u *__P, __m128i __B)
+_mm_storel_epi64 (__m128i *__P, __m128i __B)
 {
-  *(__m64_u *)__P = (__m64) ((__v2di)__B)[0];
+  *(long long *)__P = __builtin_ia32_vec_ext_v2di ((__v2di)__B, 0);
 }
 
 extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_movepi64_pi64 (__m128i __B)
 {
-  return (__m64) ((__v2di)__B)[0];
+  return (__m64) __builtin_ia32_vec_ext_v2di ((__v2di)__B, 0);
 }
 
 extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
@@ -4607,25 +4507,25 @@ _mm_unpacklo_epi64 (__m128i __A, __m128i __B)
 extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_add_epi8 (__m128i __A, __m128i __B)
 {
-  return (__m128i) ((__v16qu)__A + (__v16qu)__B);
+  return (__m128i)__builtin_ia32_paddb128 ((__v16qi)__A, (__v16qi)__B);
 }
 
 extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_add_epi16 (__m128i __A, __m128i __B)
 {
-  return (__m128i) ((__v8hu)__A + (__v8hu)__B);
+  return (__m128i)__builtin_ia32_paddw128 ((__v8hi)__A, (__v8hi)__B);
 }
 
 extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_add_epi32 (__m128i __A, __m128i __B)
 {
-  return (__m128i) ((__v4su)__A + (__v4su)__B);
+  return (__m128i)__builtin_ia32_paddd128 ((__v4si)__A, (__v4si)__B);
 }
 
 extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_add_epi64 (__m128i __A, __m128i __B)
 {
-  return (__m128i) ((__v2du)__A + (__v2du)__B);
+  return (__m128i)__builtin_ia32_paddq128 ((__v2di)__A, (__v2di)__B);
 }
 
 extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
@@ -4655,25 +4555,25 @@ _mm_adds_epu16 (__m128i __A, __m128i __B)
 extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_sub_epi8 (__m128i __A, __m128i __B)
 {
-  return (__m128i) ((__v16qu)__A - (__v16qu)__B);
+  return (__m128i)__builtin_ia32_psubb128 ((__v16qi)__A, (__v16qi)__B);
 }
 
 extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_sub_epi16 (__m128i __A, __m128i __B)
 {
-  return (__m128i) ((__v8hu)__A - (__v8hu)__B);
+  return (__m128i)__builtin_ia32_psubw128 ((__v8hi)__A, (__v8hi)__B);
 }
 
 extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_sub_epi32 (__m128i __A, __m128i __B)
 {
-  return (__m128i) ((__v4su)__A - (__v4su)__B);
+  return (__m128i)__builtin_ia32_psubd128 ((__v4si)__A, (__v4si)__B);
 }
 
 extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_sub_epi64 (__m128i __A, __m128i __B)
 {
-  return (__m128i) ((__v2du)__A - (__v2du)__B);
+  return (__m128i)__builtin_ia32_psubq128 ((__v2di)__A, (__v2di)__B);
 }
 
 extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
@@ -4715,7 +4615,7 @@ _mm_mulhi_epi16 (__m128i __A, __m128i __B)
 extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_mullo_epi16 (__m128i __A, __m128i __B)
 {
-  return (__m128i) ((__v8hu)__A * (__v8hu)__B);
+  return (__m128i)__builtin_ia32_pmullw128 ((__v8hi)__A, (__v8hi)__B);
 }
 
 extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
@@ -4762,18 +4662,6 @@ _mm_srai_epi32 (__m128i __A, int __B)
 
 
 extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_bsrli_si128 (__m128i __A, const int __N)
-{
-  return (__m128i)__builtin_ia32_psrldqi128 (__A, __N * 8);
-}
-
-extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_bslli_si128 (__m128i __A, const int __N)
-{
-  return (__m128i)__builtin_ia32_pslldqi128 (__A, __N * 8);
-}
-
-extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_srli_si128 (__m128i __A, const int __N)
 {
   return (__m128i)__builtin_ia32_psrldqi128 (__A, __N * 8);
@@ -4784,7 +4672,13 @@ _mm_slli_si128 (__m128i __A, const int __N)
 {
   return (__m128i)__builtin_ia32_pslldqi128 (__A, __N * 8);
 }
-# 1205 "/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include/emmintrin.h" 3 4
+
+
+
+
+
+
+
 extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_srli_epi16 (__m128i __A, int __B)
 {
@@ -4854,7 +4748,7 @@ _mm_srl_epi64 (__m128i __A, __m128i __B)
 extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_and_si128 (__m128i __A, __m128i __B)
 {
-  return (__m128i) ((__v2du)__A & (__v2du)__B);
+  return (__m128i)__builtin_ia32_pand128 ((__v2di)__A, (__v2di)__B);
 }
 
 extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
@@ -4866,67 +4760,67 @@ _mm_andnot_si128 (__m128i __A, __m128i __B)
 extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_or_si128 (__m128i __A, __m128i __B)
 {
-  return (__m128i) ((__v2du)__A | (__v2du)__B);
+  return (__m128i)__builtin_ia32_por128 ((__v2di)__A, (__v2di)__B);
 }
 
 extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_xor_si128 (__m128i __A, __m128i __B)
 {
-  return (__m128i) ((__v2du)__A ^ (__v2du)__B);
+  return (__m128i)__builtin_ia32_pxor128 ((__v2di)__A, (__v2di)__B);
 }
 
 extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_cmpeq_epi8 (__m128i __A, __m128i __B)
 {
-  return (__m128i) ((__v16qi)__A == (__v16qi)__B);
+  return (__m128i)__builtin_ia32_pcmpeqb128 ((__v16qi)__A, (__v16qi)__B);
 }
 
 extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_cmpeq_epi16 (__m128i __A, __m128i __B)
 {
-  return (__m128i) ((__v8hi)__A == (__v8hi)__B);
+  return (__m128i)__builtin_ia32_pcmpeqw128 ((__v8hi)__A, (__v8hi)__B);
 }
 
 extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_cmpeq_epi32 (__m128i __A, __m128i __B)
 {
-  return (__m128i) ((__v4si)__A == (__v4si)__B);
+  return (__m128i)__builtin_ia32_pcmpeqd128 ((__v4si)__A, (__v4si)__B);
 }
 
 extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_cmplt_epi8 (__m128i __A, __m128i __B)
 {
-  return (__m128i) ((__v16qi)__A < (__v16qi)__B);
+  return (__m128i)__builtin_ia32_pcmpgtb128 ((__v16qi)__B, (__v16qi)__A);
 }
 
 extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_cmplt_epi16 (__m128i __A, __m128i __B)
 {
-  return (__m128i) ((__v8hi)__A < (__v8hi)__B);
+  return (__m128i)__builtin_ia32_pcmpgtw128 ((__v8hi)__B, (__v8hi)__A);
 }
 
 extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_cmplt_epi32 (__m128i __A, __m128i __B)
 {
-  return (__m128i) ((__v4si)__A < (__v4si)__B);
+  return (__m128i)__builtin_ia32_pcmpgtd128 ((__v4si)__B, (__v4si)__A);
 }
 
 extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_cmpgt_epi8 (__m128i __A, __m128i __B)
 {
-  return (__m128i) ((__v16qi)__A > (__v16qi)__B);
+  return (__m128i)__builtin_ia32_pcmpgtb128 ((__v16qi)__A, (__v16qi)__B);
 }
 
 extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_cmpgt_epi16 (__m128i __A, __m128i __B)
 {
-  return (__m128i) ((__v8hi)__A > (__v8hi)__B);
+  return (__m128i)__builtin_ia32_pcmpgtw128 ((__v8hi)__A, (__v8hi)__B);
 }
 
 extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_cmpgt_epi32 (__m128i __A, __m128i __B)
 {
-  return (__m128i) ((__v4si)__A > (__v4si)__B);
+  return (__m128i)__builtin_ia32_pcmpgtd128 ((__v4si)__A, (__v4si)__B);
 }
 
 
@@ -4941,7 +4835,7 @@ _mm_insert_epi16 (__m128i const __A, int const __D, int const __N)
 {
   return (__m128i) __builtin_ia32_vec_set_v8hi ((__v8hi)__A, __D, __N);
 }
-# 1369 "/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include/emmintrin.h" 3 4
+# 1345 "/usr/lib/gcc/x86_64-linux-gnu/4.9/include/emmintrin.h" 3 4
 extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_max_epi16 (__m128i __A, __m128i __B)
 {
@@ -4996,7 +4890,7 @@ _mm_shuffle_epi32 (__m128i __A, const int __mask)
 {
   return (__m128i)__builtin_ia32_pshufd ((__v4si)__A, __mask);
 }
-# 1432 "/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include/emmintrin.h" 3 4
+# 1408 "/usr/lib/gcc/x86_64-linux-gnu/4.9/include/emmintrin.h" 3 4
 extern __inline void __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_maskmoveu_si128 (__m128i __A, __m128i __B, char *__C)
 {
@@ -5124,17 +5018,9 @@ _mm_castsi128_pd(__m128i __A)
 {
   return (__m128d) __A;
 }
-# 1253 "/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include/xmmintrin.h" 2 3 4
-# 1264 "/usr/lib/gcc/x86_64-pc-linux-gnu/7.1.1/include/xmmintrin.h" 3 4
-extern __inline void __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_pause (void)
-{
-  __builtin_ia32_pause ();
-}
+# 1259 "/usr/lib/gcc/x86_64-linux-gnu/4.9/include/xmmintrin.h" 2 3 4
 # 12 "../src/atomic_ops/sysdeps/gcc/../standard_ao_double_t.h" 2
-  
-# 12 "../src/atomic_ops/sysdeps/gcc/../standard_ao_double_t.h"
- typedef __m128 double_ptr_storage;
+  typedef __m128 double_ptr_storage;
 
 
 

@@ -1,0 +1,1 @@
+let a = 4 in let b = 5 in let c = 6 in let d = b * b - 4 * a * c in if d<0 then print("discri neg") else if d == 0 then print("discri nul") else print("discri pos") 

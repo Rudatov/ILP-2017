@@ -249,7 +249,7 @@ am_libgc_la_OBJECTS = allchblk.lo alloc.lo blacklst.lo checksums.lo \
 	real_malloc.lo reclaim.lo specific.lo stubborn.lo typd_mlc.lo \
 	backgraph.lo thread_local_alloc.lo $(am__objects_1) \
 	$(am__objects_2) $(am__objects_3)
-#nodist_libgc_la_OBJECTS = libatomic_ops/src/atomic_ops.lo
+nodist_libgc_la_OBJECTS = libatomic_ops/src/atomic_ops.lo
 #nodist_libgc_la_OBJECTS = libatomic_ops/src/atomic_ops_sysdeps.lo
 libgc_la_OBJECTS = $(am_libgc_la_OBJECTS) $(nodist_libgc_la_OBJECTS)
 libgc_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
@@ -692,7 +692,7 @@ distuninstallcheck_listfiles = find . -type f -print
 am__distuninstallcheck_listfiles = $(distuninstallcheck_listfiles) \
   | sed 's|^\./|$(prefix)/|' | grep -v '$(infodir)/dir$$'
 distcleancheck_listfiles = find . -type f -print
-ACLOCAL = ${SHELL} /home/ptalbot/repositories/research/lectures/dlp/ILP-UPMC/C/gc-7.2/missing aclocal-1.14
+ACLOCAL = ${SHELL} /users/nfs/Etu0/3100420/workspace/ILP-UPMC/C/gc-7.2/missing aclocal-1.14
 AMTAR = $${TAR-tar}
 AM_CFLAGS =  -fexceptions
 AM_CPPFLAGS = \
@@ -701,11 +701,11 @@ AM_CPPFLAGS = \
 
 AM_DEFAULT_VERBOSITY = 1
 AR = ar
-ATOMIC_OPS_CFLAGS = 
-ATOMIC_OPS_LIBS = -latomic_ops
-AUTOCONF = ${SHELL} /home/ptalbot/repositories/research/lectures/dlp/ILP-UPMC/C/gc-7.2/missing autoconf
-AUTOHEADER = ${SHELL} /home/ptalbot/repositories/research/lectures/dlp/ILP-UPMC/C/gc-7.2/missing autoheader
-AUTOMAKE = ${SHELL} /home/ptalbot/repositories/research/lectures/dlp/ILP-UPMC/C/gc-7.2/missing automake-1.14
+ATOMIC_OPS_CFLAGS = -I$(top_builddir)/libatomic_ops/src -I$(top_srcdir)/libatomic_ops/src
+ATOMIC_OPS_LIBS = 
+AUTOCONF = ${SHELL} /users/nfs/Etu0/3100420/workspace/ILP-UPMC/C/gc-7.2/missing autoconf
+AUTOHEADER = ${SHELL} /users/nfs/Etu0/3100420/workspace/ILP-UPMC/C/gc-7.2/missing autoheader
+AUTOMAKE = ${SHELL} /users/nfs/Etu0/3100420/workspace/ILP-UPMC/C/gc-7.2/missing automake-1.14
 AWK = gawk
 CC = gcc
 CCAS = gcc
@@ -728,13 +728,13 @@ DUMPBIN =
 ECHO_C = 
 ECHO_N = -n
 ECHO_T = 
-EGREP = /usr/bin/grep -E
+EGREP = /bin/grep -E
 EXEEXT = 
 EXTRA_TEST_LIBS = 
-FGREP = /usr/bin/grep -F
+FGREP = /bin/grep -F
 GC_CFLAGS =  -fexceptions
 GC_VERSION = 
-GREP = /usr/bin/grep
+GREP = /bin/grep
 INSTALL = /usr/bin/install -c
 INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
@@ -749,9 +749,9 @@ LIPO =
 LN_S = ln -s
 LTLIBOBJS = 
 MAINT = #
-MAKEINFO = ${SHELL} /home/ptalbot/repositories/research/lectures/dlp/ILP-UPMC/C/gc-7.2/missing makeinfo
+MAKEINFO = ${SHELL} /users/nfs/Etu0/3100420/workspace/ILP-UPMC/C/gc-7.2/missing makeinfo
 MANIFEST_TOOL = :
-MKDIR_P = /usr/bin/mkdir -p
+MKDIR_P = /bin/mkdir -p
 NM = /usr/bin/nm -B
 NMEDIT = 
 OBJDUMP = objdump
@@ -770,17 +770,17 @@ PKG_CONFIG = /usr/bin/pkg-config
 PKG_CONFIG_LIBDIR = 
 PKG_CONFIG_PATH = 
 RANLIB = ranlib
-SED = /usr/bin/sed
+SED = /bin/sed
 SET_MAKE = 
-SHELL = /bin/sh
+SHELL = /bin/bash
 STRIP = strip
 THREADDLLIBS = -lpthread -ldl
 UNWINDLIBS = 
 VERSION = 7.2
-abs_builddir = /home/ptalbot/repositories/research/lectures/dlp/ILP-UPMC/C/gc-7.2
-abs_srcdir = /home/ptalbot/repositories/research/lectures/dlp/ILP-UPMC/C/gc-7.2
-abs_top_builddir = /home/ptalbot/repositories/research/lectures/dlp/ILP-UPMC/C/gc-7.2
-abs_top_srcdir = /home/ptalbot/repositories/research/lectures/dlp/ILP-UPMC/C/gc-7.2
+abs_builddir = /users/nfs/Etu0/3100420/workspace/ILP-UPMC/C/gc-7.2
+abs_srcdir = /users/nfs/Etu0/3100420/workspace/ILP-UPMC/C/gc-7.2
+abs_top_builddir = /users/nfs/Etu0/3100420/workspace/ILP-UPMC/C/gc-7.2
+abs_top_srcdir = /users/nfs/Etu0/3100420/workspace/ILP-UPMC/C/gc-7.2
 ac_ct_AR = ar
 ac_ct_CC = gcc
 ac_ct_CXX = g++
@@ -813,7 +813,7 @@ host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/ptalbot/repositories/research/lectures/dlp/ILP-UPMC/C/gc-7.2/install-sh
+install_sh = ${SHELL} /users/nfs/Etu0/3100420/workspace/ILP-UPMC/C/gc-7.2/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -828,7 +828,7 @@ psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
 srcdir = .
-subdirs = 
+subdirs =  libatomic_ops
 sysconfdir = ${prefix}/etc
 target = x86_64-unknown-linux-gnu
 target_alias = 
@@ -933,7 +933,7 @@ libgc_la_SOURCES = allchblk.c alloc.c blacklst.c checksums.c dbg_mlc.c \
 	thread_local_alloc.c $(am__append_1) $(am__append_2) \
 	$(am__append_3)
 #nodist_libgc_la_SOURCES = libatomic_ops/src/atomic_ops_sysdeps.S
-#nodist_libgc_la_SOURCES = libatomic_ops/src/atomic_ops.c
+nodist_libgc_la_SOURCES = libatomic_ops/src/atomic_ops.c
 
 # Include THREADDLLIBS here to ensure that the correct versions of
 # linuxthread semaphore functions get linked:

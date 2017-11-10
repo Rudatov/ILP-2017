@@ -1,0 +1,7 @@
+function f(x)
+(
+	x = 2 * x
+	unless x<74
+);
+
+f(77);
